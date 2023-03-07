@@ -1,0 +1,66 @@
+body {
+    margin-left: 8pt;
+    margin-right: 8pt;
+    margin-top: 10pt;
+    margin-bottom: 10pt;
+}
+
+#title {
+    text-align: center;
+    color: #3B264A;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.button {
+    text-align: center;
+    font-size: 4pt;
+}
+
+.legend {
+    position: absolute;
+    background-color: #EEEEEF;
+    border-radius: 3px;
+    bottom: 0;
+    margin-bottom: 30px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1); /*horizontal shadow, vertical shadow, size of shadow, color*/
+    font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
+    padding: 10px;
+    right: 10px;
+    z-index: 1;
+}
+
+.legend h4 {
+    margin: 0 0 10px;
+}
+
+.legend div span {
+    display: inline-block;
+    border-radius: 50%; /*curve border to make a circle*/
+    height: 10px; /*size of circle*/
+    width: 10px;
+    margin-right: 5px; /*position of circle*/
+}
+
+.map { 
+    position: absolute;
+    height: 100%;
+    width: 98.25%;
+    border: solid black;
+}
+
+#explanation {
+    text-align: left;
+    position: relative;
+    top: 600px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#footer {
+    position: relative;
+    top: 600px;
+    color:#3B264A;
+    font-family:'Courier New', Courier, monospace;
+    font-size: 8pt;
+    position: relative;
+}

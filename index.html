@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Everything up until this point is boilerplate code.-->
+    <title>GGR472 Lab 3: Eating as a U of T Student</title> <!--The title of the website-->
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.12.0/mapbox-gl.js'></script> <!--Provides the JavaScript that will make the map run-->
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.12.0/mapbox-gl.css' rel='stylesheet' /> <!--Provides the CSS stylesheet that will style the map-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous"> <!--Links to a CSS stylesheet that incorporates Bootstrap into the website-->
+    <link rel="stylesheet" href="style.css"> <!--Links to my own personal stylesheet, which will style the rest of the webpage and dictate how the map takes up space on the page-->
+</head>
+<body>
+    <div id='title'> <!--This container holds a title for the map page.-->
+        <h1>
+            GGR472 Lab 3:<br>
+            Where to Eat Near U of T
+        </h1>
+    </div>
+    <div id='introduction' class='text'> <!--This container holds an introdution to what will be shown on the map.-->
+        <p>
+            Over the past three-and-a-half years that I have attended the University of Toronto, I've gotten to experience a wide variety of amazing food, especially close to school. Many of these restaurants have become very near and dear to my heart and I always look forward to sharing it with my friends when they come to visit. <br>
+            <br>
+            This summer, I will be graduating from U of T, which means that for the first time since I started in 2019, my entire family will be visiting from my hometown. On top of that, my best friend will also be visiting. As such, I have a lot of opportunities to share my favourite restaurants! This map shows all the different places I have come to love near U of T.
+        </p>
+    </div>
+    <div class=row id="button"> <!--The following is some Bootstrap-related code that allowed me to position the recentering button a little better.-->
+        <div class="col">
+        </div>
+        <div class="col">
+            <button type="button" class="btn btn-primary"
+            id="returnbutton">Re-centre the map!</button>
+        </div>
+        <div class="col"></div>
+        <br>
+    </div>
+    <div class=row>
+        <div class="col">
+        </div>
+        <div class="col">
+            <div id='legend' class='legend'> <!--This container houses my legend!-->
+                <h4>Legend</h4>
+                <div><span style='background-color: #FFFFFF'></span>Subway/LRT</div>
+                <div><span style='background-color: #0082C9'></span>Rapid Transit</div>
+                <div><span style='background-color: #DA251D'></span>Surface Route</div>
+            </div>
+        </div>
+        <div class="col"></div>
+        <p>
+            <br>
+        </p>
+    </div>
+    <div id='map' class = 'map'></div> <!--This sets up the container that will hold the map. I plan to include a hover box of when each station was constructed and what expansion it might have ben a part of-->
+    <script src="script.js"></script> <!--This links back to the JavaScript that controls how the map operates.-->
+    <div id='explanation'> <!--This container holds an explanation of some of the things you see on the map and a bit of the story behind some of the things I've chosen to show.-->
+        <p>
+            Because I take public transit exclusively and do not drive in Toronto, I have included all the transit around the university. In addition, I was curious to know how the accessibility of the area might change with the addition of future subway lines, such as the Ontario Line, so I included some infrastructure that hasn't been completed yet.
+        </p>
+    </div>
+    <div id='footer'> <!--This container will hold a footer for the webpage, which includes the sources of my data and who created the map.-->
+        <p>Map produced in 2023 by Meghan Kolin, for GGR472H1-S: Developing Web Maps at the University of Toronto.</p>
+    </div>
+</body>
+</html>
